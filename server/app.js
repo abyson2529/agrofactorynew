@@ -15,7 +15,7 @@ const Authroute = require("./routes/authentication");
 
 
 
-mongoose.connect("mongodb+srv://abysonmathew:Abyson123@cluster0.4rql7jo.mongodb.net/test", {
+mongoose.connect("mongodb+srv://abysonmathew:Abyson123@cluster0.4rql7jo.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
