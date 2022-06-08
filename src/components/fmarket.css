@@ -1,0 +1,114 @@
+.bkImg {
+  background-image: url("/src/assets/daa1.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+}
+
+h1{
+  padding-top: 60px;
+  text-align: center;
+  color: Black;
+  font-size: 80px;
+ font-family: Cambria, Kozhikode, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.desc {
+  font-size: 20px;
+  margin: 0% 12%;
+  text-align: center;
+}
+.my-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    margin: 2rem 0.5rem;
+    
+}
+
+
+.my-icon img {
+   width: 50%;
+   height: 70%;
+   border-radius: 50%;
+
+} 
+
+.my-icon1 img {
+  width: 50%;
+  height: 70%;
+  border-radius: 50%;
+
+}
+
+.icon-list{
+   display: flex;
+   flex-direction: row;
+   margin-top: 2.5rem;
+   min-width: 100vw;
+  
+}
+.icon-list1{
+  display: flex;
+  flex-direction: row;
+  min-width: 100vw;
+}
+.my-icon p {
+   color: white;
+   
+}
+
+
+
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  margin-left: 300px;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.btn-dash {
+      transition-duration: 0.4s;
+      border: none;
+      color: black;
+      border-radius: 10px;
+      background-color: #3EFB9F; 
+      padding: 5px 15px;
+      font-weight: 600;
+    }
+    
+.btn-dash:hover {
+     /* Green */
+      color: white;
+    }

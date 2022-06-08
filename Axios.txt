@@ -1,0 +1,32 @@
+const history = useHistory();
+
+  const [username, setUsername] = useState(null);
+  const [password, setPassword] = useState(null);
+
+  const handleUsername = (event) => {
+    setUsername(event.target.value);
+  };
+  const handlePassword = (event) => {
+    setPassword(event.target.value);
+  };
+  const handleSubmit = async () => {
+    const data = {
+      username: username,
+      password: password,
+    };
+    try {
+      const response = await axios.post("http://localhost:5000/login", data);
+      alert(response.status);
+      if (response.status === 200) {
+        alert("Logged In");
+        history.push({
+          pathname: "/demologin"
+        });
+      } else {
+        alert("Login Failed");
+      }
+    } catch (e) {
+      console.log("Network issue !!");
+    }
+  };
+  console.log("data", username, password);
